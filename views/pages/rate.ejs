@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rate Info</title>
+</head>
+<body>
+	<h1>Cost</h1>
+	<%if (!ow){%>
+	<p>
+		The cost of sending 1 <%=mail%> weighing <%=weight%>oz. is $
+		<%=parseFloat(Math.round(cost * 100) / 100).toFixed(2)%>
+	</p>
+	<%}else {%>
+	<p>
+		<%=cost%>
+		<%}%>
+	</p>
+</body>
+</html>
